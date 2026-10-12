@@ -1,0 +1,81 @@
+import type { RecoveryRoutine } from '../types';
+
+export const SEED_RECOVERY: RecoveryRoutine = {
+  id: 'recovery-default',
+  name: 'Gentle shoulder and hip mobility',
+  seeded: true,
+  updatedAt: '2026-10-12T00:00:00.000Z',
+  movements: [
+    {
+      id: 'r-arm-circles',
+      name: 'Gentle arm circles',
+      description: 'Small, easy circles forward and back. Grow them only as far as is comfortable.',
+      dose: { kind: 'reps', value: 10 },
+      availability: 'available',
+    },
+    {
+      id: 'r-rot-thumbs-up',
+      name: 'Shoulder rotations, thumbs up',
+      description: 'Arms by your sides, thumbs pointing up. Slowly rotate the arms outward and back.',
+      dose: { kind: 'reps', value: 8 },
+      availability: 'available',
+    },
+    {
+      id: 'r-rot-palms-forward',
+      name: 'Shoulder rotations, palms forward',
+      description: 'Turn the palms forward and slightly outward, then relax. Stay in a comfortable range.',
+      dose: { kind: 'reps', value: 8 },
+      availability: 'available',
+    },
+    {
+      id: 'r-rot-thumbs-down',
+      name: 'Shoulder rotations, thumbs down',
+      description: 'Gently turn the thumbs down and back. Only within a comfortable range — stop short of any pinch.',
+      dose: { kind: 'reps', value: 6 },
+      availability: 'available',
+    },
+    {
+      id: 'r-hip-rotations',
+      name: 'Bent-knee hip rotations',
+      description: 'Lying on your back, knees bent, let both knees sway gently side to side.',
+      dose: { kind: 'reps', value: 8, perSide: true },
+      availability: 'available',
+    },
+    {
+      id: 'r-hip-flexor',
+      name: 'Gentle hip-flexor stretch',
+      description: 'Half-kneeling with a cushion under the knee. Tuck the pelvis slightly; ease forward only a little.',
+      dose: { kind: 'seconds', value: 30, perSide: true },
+      availability: 'available',
+    },
+    {
+      id: 'r-hip-abduction',
+      name: 'Supported standing hip abduction',
+      description: 'Hold the rack for support. Lift one leg out to the side a short distance and lower slowly.',
+      dose: { kind: 'reps', value: 10, perSide: true },
+      availability: 'available',
+    },
+    {
+      id: 'r-adductor',
+      name: 'Gentle adductor mobility',
+      description: 'On hands and knees with knees slightly wide, rock the hips back a little and return. Not a deep groin stretch.',
+      dose: { kind: 'reps', value: 8 },
+      availability: 'available',
+    },
+    {
+      id: 'r-breathing',
+      name: 'Relaxed diaphragmatic breathing',
+      description: 'Lying or seated, one hand on the belly. Breathe in through the nose so the belly rises; long, easy exhale.',
+      dose: { kind: 'breaths', value: 10 },
+      availability: 'available',
+    },
+    {
+      id: 'r-walk',
+      name: 'Easy walking or a movement break',
+      description: 'Optional. A comfortable walk or a short break from sitting during the workday.',
+      dose: { kind: 'minutes', value: 5 },
+      availability: 'available',
+      note: 'Optional',
+    },
+  ],
+};
